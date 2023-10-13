@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Redes Sociales HallacaVenezolana</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="shortcut icon" href="images/pfp">
+</head>
+
+<body  class="cuerpo">
+    <img src="images/pfp.jpg" alt="php" style="border-radius: 50%;" class="mt-5">
+    <h1 class="flick ">¡Escríbenos!</h1>
+    <ul class="links">
+        <li>
+            <a href="https://wa.me/34679311358">WhatsApp</a>
+        </li>
+    </ul>
+    
+    <h2 class="flick">¡Nuestras Redes!</h2>
+    <ul class="links">
+        <li>
+            <a href="https://wa.me/34679311358">WhatsApp</a>
+        </li>
+        <li id="openInstagram">
+            Instagram
+        </li>
+        <li id="openFaceBook">
+            FaceBook
+        </li>
+        <li id="openTikTok">
+            TikTok
+        </li>
+    </ul>
+    <script>
+        document.getElementById('openInstagram').onclick = function() {
+            if (/Mobi/i.test(navigator.userAgent)) {
+                window.location.href = 'instagram://user?username=hallacavenezolana';
+            } else {
+                window.location.href = 'https://www.instagram.com/hallacavenezolana/';
+            }
+        };
+    
+        document.getElementById('openFaceBook').onclick = function() {
+            if (/Mobi/i.test(navigator.userAgent)) {
+                window.location.href = 'fb://page/hallacasvenezolanasenespana'; // Reemplaza 'ID_DE_PAGINA_DE_FACEBOOK' con el ID de la página de Facebook.
+            } else {
+                window.location.href = 'https://www.facebook.com/hallacasvenezolanasenespana';
+            }
+        };
+    
+        document.getElementById('openTikTok').onclick = function() {
+            if (/Mobi/i.test(navigator.userAgent)) {
+                window.location.href = 'tiktok://user?username=hallacasvenezolanas';
+            } else {
+                window.location.href = 'https://www.tiktok.com/@hallacasvenezolanas';
+            }
+        };
+    </script>
+</body>
+
+</html>
